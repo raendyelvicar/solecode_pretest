@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.3;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #e6e6e6;
+}
+
+span {
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 22px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  font-size: 10px;
+}
+
+.wrapper {
+  padding: 12px;
+}
+
+.top-container {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.sorting-container,
+.filter-container {
+  position: relative;
+  height: 20px;
+}
+
+.sorting-container {
+  width: 50%;
+}
+
+.filter-container {
+  width: 50%;
+}
+
+.sorting-container.active {
+  height: 80px;
+}
+
+.filter-container.active {
+  height: 150px;
+}
+
+.filter-container ul,
+.sorting-container ul {
+  position: absolute;
+  background-color: #fff;
+  padding: 8px 15px;
+  border-radius: 10px;
+}
+
+.sorting-container ul,
+.filter-container ul {
+  width: 145px;
+}
+
+.sorting-container ul li:nth-child(1) {
+  margin-bottom: 10px;
+}
+
+.filter-container .label,
+.sorting-container .label {
+  background: #fff;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.sorting-container ul li,
+.filter-container ul li {
+  font-size: 10px;
+  height: 20px;
+}
+
+.dropdown-menu {
+  margin-top: 5px;
+}
+
+#dropdown-sort {
+  display: none;
+}
+
+#dropdown-filter {
+  display: none;
+}
+
+#icon img {
+  width: 30px;
+  height: 30px;
+  opacity: 40%;
+}
+
+.img-container {
+  width: 120px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-container img {
+  width: 70%;
+  height: auto;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0 auto 20px auto;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  padding: 20px 5px;
+  background-color: #fff;
+}
+
+.information-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.information-container div {
+  margin: 0 5px;
+}
+
+.information-container span {
+  color: gray;
+}
+
+#departure,
+#arrival {
+  text-align: center;
+}
+
+#departure div,
+#arrival div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    width: 60%;
+    margin: auto;
+  }
+
+  .img-container img {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 968px) {
+  .wrapper {
+    width: 60%;
+    margin: auto;
+  }
+
+  .img-container img {
+    width: 90%;
+  }
+}
