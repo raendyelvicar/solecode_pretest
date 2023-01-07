@@ -78,6 +78,7 @@ const flights = [
 let dropdownSortState = false;
 let dropdownFilterState = false;
 let schedAsc = false;
+let nameAsc = false;
 
 const renderTemplate = (arr) => {
   let container = document.querySelector(".container");
@@ -236,8 +237,12 @@ const addNewKey = (arr) => {
 };
 
 const handleSortingByName = () => {
-  const newData = addNewKey(flights);
-  console.log("new data", newData);
+  let temp = [...flights];
+  let newData = addNewKey(temp);
+
+  //sorting new array
+
+  //call renderData()
 };
 
 const handleSortingBySchedule = () => {
